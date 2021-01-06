@@ -25,9 +25,11 @@
     justify-content: space-between;
 }
 #header #logo{
-    justify-self: start;
-   
-    margin-top: 10px;
+    display: block;
+	padding: 0 30px;
+	float: left;
+	font-size:20px;
+	line-height: 60px
 }
 #header ul{
     list-style:none;
@@ -82,28 +84,39 @@
     width:400px;
     margin-top:45px;
     display:flex ;
+    flex-direction: row;
     justify-content: space-between;
     
 }
 .phone-image{
+    max-width: 100%;
 }
 #second-half{
     display: flex;
     flex-direction: column;
-    align-items: center;  
-    margin-top:200px;  
+    align-items: center;
+    margin-top:200px;
+      
 }
-.reviews{
+#reviews{
     display: flex;
     flex-direction:row;
-    width:65%;
+    width:70%;
     justify-content: space-between;
+}
+.review-set{
+    width:300px; 
+ }
+ #reviews h2,h3{
+    
+    font-weight: bold;
+    font-family: lora;
 }
 .all-in-one{
     margin-top:150px;
     text-align: center;
 }
-.container2{
+#container2{
     margin-top:65px;
     width:80%;
     margin-left:10%;
@@ -221,3 +234,87 @@ footer h3{
     font-weight: normal;
     
 }
+
+
+@media all and (max-width: 768px){
+    #header ul{
+        display: none;
+    }
+    
+    .container{
+    flex-direction: column;
+    align-items: center;
+    }
+    .first-head{
+        font-size:4vw;  
+    }
+    .second-head{
+        
+        font-size: 5vw;
+    }
+    .body-text{
+        font-size: 2.4vw;
+    }
+    .phone-image{
+        margin-top: 60px;
+        max-width:100%;
+    }
+    #reviews{
+        flex-direction: column;
+        align-self:center; 
+        width:280px; 
+    }
+    .review-set{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .review-set p{
+        margin-left: 40px;
+    }
+    #second-half{
+        margin-top:100px;
+    }
+    .centered-head{
+        margin-bottom:0px;
+    }
+    #container2{
+        flex-direction: column;
+    }
+    .columns{
+        flex-direction: row;
+        justify-items: space-between;
+
+    }
+    .columns img{
+        max-width:100%;
+    }
+    .columns h3{
+        font-size: 3.5vw;
+    }
+    .tiny-groups{
+        margin:40px;
+    }
+    .third-section{
+        background-image: url("../images/Rectangle 21.png");   
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        }
+    #hello{
+        font-size: 4vw;
+    }
+    #footer-contact{
+        flex-direction:column;
+        align-items: center;
+    }
+    #contact{
+        margin: 0;
+    }
+    #social{
+        float: right;
+    }
+    .wrapper{
+        font-size: 2.4vw;
+    }
+    
+    }
